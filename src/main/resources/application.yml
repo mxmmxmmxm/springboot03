@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    username: zhangsan
+    password: rootroot
+    url: jdbc:mysql://192.168.181.128:3306/springboot?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+  main:
+    allow-bean-definition-overriding: true
+  redis:
+    port: 6379
+    host: 192.168.181.128
+logging:
+  level:
+    com.atguigu.dao: debug # 配置日志
